@@ -1,0 +1,199 @@
+%-------------------------
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%------------------------------------------
+%%%%%%  NOW the GOOD STUFF  %%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  {} & \textbf{Email} : \href{mailto:rajat.gupta99924@gmail.com}{rajat.gupta99924@gmail.com}\\
+  \textbf{\href{https://z3ta.me/}{\huge Rajat Gupta}} & \textbf{Mobile} {: +91-9047393679}\\
+   \textbf{Blog:} \href{https://z3ta.me/}{z3ta.me} & \textbf{LinkedIn:} \href{https://linkedin.com/in/rjt-gupta}{linkedin.com/in/rjt-gupta}\\
+  {} & \textbf{GitHub:} \href{https://github.com/rjt-gupta}{github.com/rjt-gupta}\\
+  
+
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\section{Relevant Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Google Summer of Code}{}
+      {The Honeynet Project - SNARE/TANNER}{May 2019 - Present}
+      \resumeItemListStart
+        \resumeItem{}
+          {Worked on an advanced reactive \textbf{Web Application Honeypot} to detect malicious attacks. It sends the HTTP events to tanner which analyzes them. Also, worked on increasing coverage for cloner and other utilities. }
+        \resumeItem{}
+          {Tanner is a remote data analysis and classification service used to compose the response then served by SNARE events. I worked on the execution of attacks using custom \textbf{docker} images and \textbf{php sandbox.}}
+        \resumeItem{}
+        {Developed emulators to support \textbf{Template Injection, PHP Object Injection and XXE Injection} vulnerabilities.}
+        \resumeItem{}
+        {Implemented a helper utility for \textbf{Aiodocker} for managing docker asynchronously.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vellore Institute of Technology}{Vellore, India}
+      {Bachelor of Technology in Computer Science;  CGPA: 9.16/10.00}{July. 2017 -- 2021}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Mitmproxy: Open Source Contribution - \textit{An interactive TLS-capable intercepting proxy}\\}{\hspace{152mm}\textit{Jan 2019 - Present}}
+    \resumeItemListStart{}
+        \resumeItem{}
+        {Actively contribute to core proxy and its add-ons, has over \textbf{15,000 stars} on GitHub.}
+        \resumeItem{}
+        {Implemented an encoder for parsing multipart/form-data during image uploads.}
+        \resumeItem{}
+        {Added support for Non-ASCII characters in URL while parsing and extended filtering flows to filter Non-ASCII characters like Cyrillic alphabets etc.}
+    \resumeItemListEnd
+
+    \resumeSubItem{Vault: Open Source Contribution - \textit{Swiss Army Knife for hackers}}{\hspace{50mm}\textit{Dec 2018}}
+      \resumeItemListStart
+        \resumeItem{}
+      {Contributed to vault as a part of IIT Kharagpur Winter of Code'18.}
+      \resumeItem{}
+      {Implemented new attack modules and check functions in \textbf{Python3}.}
+    \resumeItemListEnd
+
+    \resumeSubItem{Decentralized Blockchain}{\hspace{123mm}\textit{Oct 2018}}
+    \resumeItemListStart{}
+        \resumeItem{}
+        {Created an API for decentralized blockchain prototype using \textbf{JavaScript}}
+        \resumeSubItem{}
+        {Features a consensus algorithm (\textbf{longest chain algorithm}) to verify the network nodes have valid data, a broadcasting system to keep the data across network nodes synchronized along with a \textbf{proof-of-work} mechanism.}
+    \resumeItemListEnd
+
+    \resumeSubItem{ANTON: \textit{Remote Administration tool}}{\hspace{100mm}\textit{Mar 2018}}
+      \resumeItemListStart
+        \resumeItem{}
+      {Developed exploit modules to steal saved chrome passwords, decrypted using windows API \textbf{CryptUnprotectData} and transfer over HTTP/TCP reverse shells including text to speech recognition module using \textbf{Python3}.}
+      \resumeItem{}
+      {Achieved 1/66 detection ratio from virus total on the final compiled malware executable.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+%---------Achievements-------------------
+\section{Achievements}
+    
+    \resumeItemListStart
+        \resumeItem{CyBRICS CTF 2019: }
+        {Finished among top 25 teams in Qualifiers and got selected for \textbf{Onsite Finals at St. Petersburg, Russia}.}
+        \resumeSubItem{HackTheBox: }
+        {Organized a University level CTF competition in which created \textbf{web and buffer overflow challenges} which received total participation of more than 500 teams.}
+        \resumeItemListEnd
+  
+%-----------VOLUNTEERING-----------------
+\section{Volunteering}
+   \resumeSubHeadingListStart 
+    \resumeSubheading
+      {Computer Society of India}{Vellore, TN}
+      {Core Committee Member}{Nov 2017 - May 2019}
+      \iffalse   % Commenting this part
+      \resumeItemListStart
+        \resumeItem{HackTheBox: }
+        {Conducted a University level CTF competition in which created \textbf{web and buffer overflow challenges} which received total participation of more than 500 players.}
+        \resumeItem{DEVSPACE: }
+          {Worked to organize the flagship 3-day event conducting seminars, workshops and a hackathon which witnessed more than 700 participants.}
+        \resumeItem{Speaker: }
+          {Conducted workshops and events introducing Bug Bounties, Web Penetration Testing and Open Source.}
+      \resumeItemListEnd
+      \fi
+
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills and Interests}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages: }{
+       Python, Javascript, C/C++
+    }
+    \resumeSubItem{Technologies: }{
+      Node.js, Django, MongoDB, Docker
+    }
+    \resumeSubItem{Tools: }{
+      Burp Suite, Metasploit, Mitmproxy, Nmap, Wireshark, Immunity Debugger. 
+    }
+
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
